@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Poem Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="main-title">The Poem Portal</h1>
+    <p>Generate beautiful poems in any language with the magic of AI ✨</p>
+  </header>
+
+  <main>
+    <form id="topic-form" class="form-container">
+      <input type="text" id="topic-input" placeholder="Enter a poem topic" required />
+      <input type="text" id="language-input" placeholder="Language (e.g. English, French, Hindi)" required />
+      <input type="submit" value="Generate Poem" />
+    </form>
+
+    <section id="output-container">
+      <div id="summary-section" class="output-box">
+        <h2 id="Poem-topic">Your Poem</h2>
+        <p id="summary-output">Poem will appear here...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Made with ❤️ by <a href="https://www.linkedin.com/in/lavy1004/" target="_blank">Lavy</a> || <a href="#" target="_blank">Github</a>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
